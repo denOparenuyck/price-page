@@ -1,0 +1,105 @@
+.header {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    .header__inner {
+        padding: 29px 0;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header__menu {
+        button {
+            width: 22px;
+            height: 15px;
+
+            .burger-icon {
+                width: 100%;
+                height: 100%;
+                fill: var(--dark);
+                transition: all .4s linear;
+
+                &:hover {
+                    fill: var(--purple);
+                }
+            }
+        }
+    }
+
+    .header__logo {
+        width: 137px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        a,
+        .logo-icon {
+            width: 137px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .header {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+
+        .header__inner {
+            padding: 29px 0;
+        }
+
+        .header__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header__menu {
+            button {
+                width: 22px;
+                height: 15px;
+
+                .burger-icon {
+                    width: 100%;
+                    height: 100%;
+                    fill: var(--dark);
+                    transition: all .4s linear;
+
+                    &:hover {
+                        fill: var(--purple);
+                    }
+                }
+            }
+        }
+
+        .header__logo {
+            position: relative;
+            top: 0;
+            left:0;
+            transform: translate(0,0);
+        }
+
+        .header__button{
+            display: none;
+        }
+    }
+}

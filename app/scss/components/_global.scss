@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: $mainFont;
+}
+
+.container {
+    width: 100%;
+    max-width: 1295px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    @media screen and (max-width:980px) {
+        max-width: 132.1429vw;
+        padding: 0 1.6327vw;
+    }
+    @media screen and (max-width:550px) {
+        max-width: 100%;
+        padding: 0 5vw;
+    }
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    header {
+        flex: 0 0 auto;
+    }
+
+    main {
+        flex: 1 0 auto;
+        background: var(--bg);
+    }
+
+    footer {
+        flex-shrink: 0;
+    }
+
+}

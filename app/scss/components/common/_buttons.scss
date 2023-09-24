@@ -1,0 +1,52 @@
+.btn {
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--white);
+    text-align: center;
+
+    border-radius: 24px;
+    background: var(--dark);
+    padding: 16px 55px;
+    transition: all .4s linear;
+
+    &:hover {
+        background: var(--dark-purple);
+    }
+
+    @media screen and (max-width:980px) {
+        font-size: 1.5306vw;
+        border-radius: 2.4490vw;
+        padding: 1.6327vw 5.6122vw;
+    }
+
+    @media screen and (max-width:550px) {
+        font-size: 4.6875vw;
+        border-radius: 7.5000vw;
+        padding: 5.0000vw 17.1875vw;
+    }
+}
+
+.small-btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: var(--purple);
+
+    font-family: $mainFont;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+    transition: all .4s linear;
+
+    &:hover {
+        background: var(--dark-purple);
+    }
+
+    @media screen and (max-width:980px) {
+        padding: 1.0204vw 3.0612vw;
+        border-radius: 2.5510vw;
+        font-size: 1.4286vw;
+    }
+}
