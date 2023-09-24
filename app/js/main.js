@@ -38,7 +38,7 @@ $(window).on('load', function () {
     $('.info__header-button').each(function (indexButton, button) {
         $(button).on('click', function () {
             if (!$(button).hasClass('current')) {
-                $(button).addClass('current').siblings().removeClass('current');
+                $(button).addClass('current').siblings().removeClass('current').addClass('lock-button');
                 $('.info__list .list').eq(indexButton - 1).find('.item').each(function (index, item) {
                     setTimeout(function () {
                         $(item).closest('.info__list').css('height', $(item).parent().outerHeight(true));
@@ -46,6 +46,9 @@ $(window).on('load', function () {
                         showCards(indexButton);
                     }, 500 + (index * 500))
                 });
+                setTimeout(function(){
+                    $(button).siblings().removeClass('lock-button');
+                }, 1500)
             }
         });
     });

@@ -70,6 +70,10 @@
                 }
             }
 
+            &.lock-button{
+                pointer-events: none;
+            }
+
             .hover-block {
                 position: absolute;
                 z-index: -1;
