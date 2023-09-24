@@ -1,7 +1,7 @@
 'use strict'
 
 
-$(window).on('load resize', function () {
+$(window).on('load', function () {
     //Animation filter buttons 
     function hoverBlock() {
         if ($('.info').length > 0) {
